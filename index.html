@@ -7,43 +7,43 @@
    </head>
    <body>
     <header> 
+
         <h1> Welcome to BurgerGOAT</h1>
         <h3>Greatest Burger of All Time </h3>
+        <img class="header-image" src="/Bilder/Fire2.jpeg">
     </header>
     <main>
-        <section class="burger-section-field">
-            <br/>
-         
-            <div class="select-burger-title"> Select burger: </div>
-                <div class="burger-info"> This is where you choose your burger</div>
+        <section id="burgers-section">
+            <p class="select-burger-title"> Select burger: </p>
+                <p> This is where you choose your burger</p>
                 <br>
-            <div class="burger-section">
+            <div id="burger-image-field">
                          
-                <div class="burger-name" > 
-                    <b>The Cheesy Mbuemo Burger</b> <br>   
+                <div class="burger-type" > 
+                    <b class="burger-name">The Cheesy Mbuemo Burger</b> <br>   
                     <img src="/Bilder/CheesyMbuemoBurger.jpeg"> 
                         <ul>
                             <li>1500 kCal</li>
-                            <li>Contatins lactose</li>
-                            <li>Contains gluten</li>
+                            <li>Contains <span class="ingredient">lactose</span></li>
+                            <li>Contains <span class="ingredient">gluten</span></li>
                         </ul>
                 </div>
-                <div class="burger-name" > 
-                    <b>The Messi Burger</b> <br>
+                <div class="burger-type" > 
+                    <b class="burger-name"> The Messi Burger</b> <br>
                     <img src="/Bilder/TheMessiBurger.jpeg" >
                         <ul>
                             <li>2500 kCal</li>
-                            <li>Contains burger</li>
-                            <li>Conatains good vibes</li>
+                            <li>Contains <span class="ingredient" >burger</span></li>
+                            <li>Contains <span class="ingredient">good vibes</span></li>
                         </ul>
                 </div>
-                <div class="burger-name" >
-                    <b>Samuel Gustafsson Special</b> <br>
+                <div class="burger-type" >
+                    <b class="burger-name">Samuel Gustafsson Special</b> <br>
                     <img src="/Bilder/SamuelGustafsson Burger.jpeg">
                         <ul>
                             <li>133 kCal</li>
                             <li>Very handsome</li>
-                            <li>Vegetarian option avaliable</li>
+                            <li><span class="vegetarian">Vegetarian </span>option avaliable</li>
                         </ul>
                 </div> 
             </div>
@@ -52,71 +52,71 @@
 
             
         </section>
+        
 
-        <br>
-        <br>
-        <section>
-            <div class="customer-info-title">Customer information:</div>
-            <p>This is where you provide necessary information</p>
-        </section>
+        <section id="order-info">
+                <p class="customer-info-title">Customer information:</p>
+                <p>This is where you provide necessary information</p>
+        
 
-        <section id="contact"> 
-            <div class="delivery-info-title"> Delivery information: </div>
-            <form>
-                <p>
-                    <label for="Fullname">Full name </label><br>
-                    <input type="text" id="Fullname" name="fn" required="required" placeholder="First- and Last name">
-                </p>
-                <p>
-                    <label for="Email"> E-mail</label><br>
-                    <input type="text" id="Email" name="em" required="required" placeholder="E-mail adress">
-                </p>
-                <p>
-                    <label for="Street">Street</label><br>
-                    <input type="text" id="Street" name="str" required="required" placeholder="Street name">
-                </p>
-                <p>
-                    <label for="House">House</label><br>
-                    <input type="number" id="House" name="h" required="required" placeholder="House number" min="0" >
-                </p>
+            <section id="contact"> 
+                <div class="delivery-info-title"> Delivery information: </div>
+                <form>
+                    <div>
+                        <label for="Fullname">Full name </label><br>
+                        <input type="text" id="Fullname" name="fn" required="required" placeholder="First- and Last name">
+                    </div>
+                    <div>
+                        <label for="Email"> E-mail</label><br>
+                        <input type="text" id="Email" name="em" required="required" placeholder="E-mail adress">
+                    </div>
+                    <div>
+                        <label for="Street">Street</label><br>
+                        <input type="text" id="Street" name="str" required="required" placeholder="Street name">
+                    </div>
+                    <div>
+                        <label for="House">House</label><br>
+                        <input type="number" id="House" name="h" required="required" placeholder="House number" min="0" >
+                    </div>
 
-                <p> 
-                    <label for="Payment">Payment options</label><br>
-                    <select id="payment" name="pmnt" required = "required"  >
-                        <option>Credit card</option>
-                        <option>Klarna</option>
-                        <option>Swish</option>
-                        <option>Krypto</option>
-                    </select>
-                </p>
-                <fieldset>
-                    <legend>Select gender</legend>
-                    <div>
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Male</label>
+                    <div> 
+                        <label for="Payment">Payment options</label><br>
+                        <select id="payment" name="pmnt" required = "required"  >
+                            <option>Credit card</option>
+                            <option>Klarna</option>
+                            <option>Swish</option>
+                            <option>Krypto</option>
+                        </select>
                     </div>
-                    <div>
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="non-binary" name="gender" value="non-binary">
-                        <label for="non-binary">Non-Binary</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="Undiscloded" name="gender" value="Undisclosed" checked="checked">
-                        <label for="Undiscloded">Undisclosed</label>
-                    </div>
-                        
-                </fieldset>
-            
+                    <fieldset>
+                        <legend>Select gender</legend>
+                        <div>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="non-binary" name="gender" value="non-binary">
+                            <label for="non-binary">Non-Binary</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Undiscloded" name="gender" value="Undisclosed" checked="checked">
+                            <label for="Undiscloded">Undisclosed</label>
+                        </div>
+                            
+                    </fieldset>
                 
+                    
 
                 </form>
-                <button type="submit">
+                <button type="submit" class="submit-button">
                     <img src="/Bilder/Green_check.svg.png" style="width: 15px;">
                     Place my order!
                 </button>
+            </section>
         </section>
 
         

@@ -1,61 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
 
 body {
-    font-family:  Helvetica, Arial, sans-serif;
-    font-size: 10pt;
+    font-family:  'Times New Roman', Times, serif;
+    font-size: 14px;
+   
+   
 }
 
-p {
-    color: rgb(16, 15, 15);
-}
-
-h1 {
-    font-family: 'Agbalumo';
-    font-size: 36pt;
-
-}
-main, header, footer, nav ul {
-    max-width: 60rem;
-    margin: 0 auto 0 auto;
-}
-
-main {
-    background-color: rgba(108, 39, 17, 0.994);
-}
-
-/* nav ul li {
-    display: inline-block;
-    background-color: grey;
-    padding: 1em;
-    margin: 1em;
-} */
 
 header {
-    background-image: url("/Bilder/Fire2.jpeg");
+    /*background-image: url("/Bilder/Fire2.jpeg");*/
     /*background-image: url("../img/polacks.jpg");*/
     background-size: cover;
     overflow: hidden;
-    width: 100%;
-    height: 110px;
-    opacity: 1;
+    text-align: center;
+    max-width: 100rem;
+    height: 160px;
+    
+    margin-left: 4px;
+    margin-right: 4px;
+    position: relative;
+
 }
 
+.header-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.75;
+    position: absolute;
+    
+    left: 0;
+    z-index: 1;
+
+}
 header h1 {
-    width:40rem;
-    margin: 0 auto;
+    
     text-align: center;
+    font-family: 'Agbalumo';
+    font-size: 50px;
+    color: rgb(23, 21, 18);
+    margin:0;
+
+    text-shadow: 3px 3px 4px rgb(74, 70, 70);
+    left:13%;
+    top:10px;
+    position: absolute;
+    z-index: 10;
+
+
 }
 header h3 {
-    width: 40rem;
+    
     margin: 0 auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 27px;
+    color: rgb(23, 21, 18);
+
+    text-shadow: 3px 3px 4px rgb(74, 70, 70);
+    left:29%;
+    top:80px;
+    position: absolute;
+    z-index: 10;
+
 }
+
+
+#burgers-section {
+    background-color: black;
+    color:white;
+    padding: 3px 15px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: 3px dotted white;
+}
+
+#order-info {
+    background-color: rgb(206, 84, 18);
+    padding: 3px 15px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border:3px dotted white;
+    color:black;
+
+}
+
 .select-burger-title {
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color:white;
+ 
 }
+#burger-image-field {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(220px, 220px));
+    justify-content: center;
+
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.burger-type{
+    
+    width:200px;
+    height:270px; 
+    margin:10px;
+    padding:1px;
+    vertical-align:top ;
+    color:white;
+    background-color: rgb(186, 74, 14);
+    text-align: center;
+    border-width: 5px;
+    border-style: outset;
+    border-color:rgb(186, 74, 14);
+}
+
+.burger-name{
+    font-size: 16px;
+}
+/*div[id] {
+    background-color: rgb(42, 12, 216);
+}
+    */
+
+.burger-type ul {
+    text-align: left;
+    margin-left: -20px;
+}
+.burger-type img {
+    width: 100%;
+    height: 180px;
+}
+.ingredient {
+    font-weight: bold;
+}
+.vegetarian {
+    color: green;
+    font-weight: bold;
+}
+
 .burger-info {
     color:white;
 }
@@ -66,32 +150,30 @@ header h3 {
 .delivery-info-title {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
-.burger-section-field {
-    background-color: rgb(8, 8, 8);
-}
-
-.burger-section {
-    margin: 0 auto;
-    text-align: center;
-}
-.burger-name{
-    display: inline-block;
-    margin:20px;
-    vertical-align:top ;
-    
-    color: rgb(14, 13, 1);
-    background-color: rgb(186, 74, 14);
-    text-align: center;
-}
-.burger-name ul {
-    text-align: left;
-    margin-left: -20px;
-}
-.burger-name img {
-    width: 180px;
+#contact div{
+    margin-bottom:10px;
 }
 
+
+button:hover {
+    background-color: green;
+    cursor:pointer;
+}
+.submit-button {
+    background-color: rgb(247, 241, 241);
+    color:rgb(10, 10, 10);
+    border-width: 5px;
+    border-color: grey;
+    border-radius: 10px;
+    box-shadow: 2px 2px dark rgb(48, 41, 41);
+    padding: 2px 8px;
+    margin-top:30px;
+    margin-bottom:10px;
+
+}
+/*
 nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, 9.25em);
@@ -104,12 +186,13 @@ nav li {
     background-color: grey;
     padding: 1em;
 }
-
-.Very-good {
+*/
+/*.Very-good {
     color: green;
 }
-
-.Master {
+*/
+/*.Master {
     color: green;
     font-weight: bold;
 }
+*/
