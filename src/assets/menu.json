@@ -1,21 +1,26 @@
 [{
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Cheesy Mbuemo Burger", 
+    "kCal": 1700, 
+    "img": "/Bilder/CheesyMbuemoBurger.jpeg",
+    "lactose": true, 
+    "gluten": true,
+    "goodVibes": false
+
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
+    "name": "The Messi Burger", 
+    "kCal": 2500, 
+    "img": "/Bilder/TheMessiBurger.jpeg",
     "lactose": false, 
-    "gluten": false
+    "gluten": true,
+    "goodVibes": true
+
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Samuel Gustafsson Special", 
+    "kCal": 200, 
+    "img": "/Bilder/SamuelGustafsson Burger.jpeg",
+    "lactose": true, 
+    "gluten": false,
+    "goodVibes": true
 }]

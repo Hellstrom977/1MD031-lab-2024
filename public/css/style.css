@@ -114,10 +114,7 @@ header h3 {
 .burger-name{
     font-size: 16px;
 }
-/*div[id] {
-    background-color: rgb(42, 12, 216);
-}
-    */
+
 
 .burger-type ul {
     text-align: left;
@@ -168,26 +165,3 @@ button:hover {
     margin-bottom:10px;
 
 }
-/*
-nav ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 9.25em);
-    gap: 1em;
-    padding: 0;
-}
-
-nav li {
-    display: block;
-    background-color: grey;
-    padding: 1em;
-}
-*/
-/*.Very-good {
-    color: green;
-}
-*/
-/*.Master {
-    color: green;
-    font-weight: bold;
-}
-*/
